@@ -228,5 +228,9 @@
   "order": [
     "search",
     "main"
+  ],
+  "order_s": [
+    "search",
+    "main"
   ]
 }
