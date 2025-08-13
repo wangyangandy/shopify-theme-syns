@@ -2795,6 +2795,15 @@ details[open] > .header__submenu {
   display: none;
 }
 
+
+/*  */
+header-menu > details:hover > .header__submenu,
+header-menu > details[open] > .header__submenu {
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 1;
+}
+
 .header--top-center .header__inline-menu,
 .header--top-center .header__heading-link {
   margin-left: 0;
