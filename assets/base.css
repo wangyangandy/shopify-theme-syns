@@ -2796,11 +2796,20 @@ details[open] > .header__submenu {
 }
 
 
-.js header-menu > details:hover > .header__submenu {
+.js header-menu > details:hover > .header__submenu,
+.js header-menu > details > summary:hover + .header__submenu {
   opacity: 1 !important;
   transform: translateY(0) !important;
   z-index: 999 !important;
-  transition: opacity var(--duration-default) ease, transform var(--duration-default) ease;
+  display: block !important;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.js header-menu > details[open]:hover > .header__submenu,
+.js header-menu > details[open] > summary:hover + .header__submenu {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  z-index: 999 !important;
   display: block !important;
 }
 
