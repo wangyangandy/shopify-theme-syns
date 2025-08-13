@@ -31,16 +31,20 @@
                 role="list"
                 tabindex="-1"
               >
-                {%- for childlink in link.links -%}
-                  <li>
-                    {%- if childlink.links == blank -%}
-                      <a
-                        id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
-                        href="{{ childlink.url }}"
-                        class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"
-                        {% if childlink.current %}
-                          aria-current="page"
-                        {% endif %}
+               {%- for childlink in link.links -%}
+  <li class="header__submenu-item">
+    {%- if childlink.links == blank -%}
+      <a
+        id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+        href="{{ childlink.url }}"
+        class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"
+        {% if childlink.current %}
+          aria-current="page"
+        {% endif %}
+      >
+        {% if childlink.image %}
+          <img src="{{ childlink.image | img_url: '100x100' }}" alt="{{ childlink.title }}" class="header__submenu-image" />
+        {% endif %}
                       >
                         {{ childlink.title | escape }}
                       </a>
