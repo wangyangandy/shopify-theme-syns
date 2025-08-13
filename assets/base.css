@@ -2796,7 +2796,7 @@ details[open] > .header__submenu {
 }
 
 
-header-menu > details:hover > .header__submenu {
+.js header-menu > details:hover > .header__submenu {
   opacity: 1 !important;
   transform: translateY(0) !important;
   z-index: 999 !important;
@@ -2805,7 +2805,7 @@ header-menu > details:hover > .header__submenu {
 }
 
 /* 确保鼠标悬停在summary上时也能显示子菜单 */
-header-menu > details > summary:hover + .header__submenu {
+.js header-menu > details > summary:hover + .header__submenu {
   opacity: 1 !important;
   transform: translateY(0) !important;
   z-index: 999 !important;
