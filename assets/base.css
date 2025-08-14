@@ -140,52 +140,56 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding: 0 5rem;
   }
 }
-
-.product-collection-lists {
-    width: 100%;
-    /* max-width: 900px; */ /* 移除最大宽度限制 */
-    /* min-width: 735px; */ /* 移除最小宽度限制 */
-    box-sizing: border-box; /* 确保padding不增加总宽度 */
-    display: flex;
-    flex-wrap: wrap;
-    border-right: 1px solid #e8e9eb;
-    padding-right: 20px;
+.header__submenu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 160px;
+  width: 100%; /* 新增：设置宽度为100% */
+ max-width: var(--page-width);
+  margin: 0 auto;
+  box-sizing: border-box; /* 新增：确保padding不增加总宽度 */
+  position: relative; /* 新增：与z-index配合使用 */
 }
 
-.collection-item-link {
-    width: 25%;
-    box-sizing: border-box; /* 确保padding不增加总宽度 */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /* 可以添加padding控制内部间距，但不会影响宽度计算 */
-    padding: 0 10px;
+.header__submenu-item {
+  width: calc(20% - 80px);
+  box-sizing: border-box;
+  text-align: center;
 }
 
-.collection-item--line {
-    width: 100%;
-    height: 1px;
-    background-color: #e8e9eb;
-    margin: 10px 0;
-    clear: both;
+.header__submenu-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
-.collection-item-link img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+@media screen and (max-width: 750px) {
+  .header__submenu-item {
+     width: calc(20% - 100px); 
+  }
 }
-.product-collection-lists {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    border-right: 1px solid #e8e9eb;
-    padding-right: 20px;
-    margin: 0 auto;
-    max-width: 1200px; /* 添加一个足够大的最大宽度 */
+
+/* 可选：调整小屏幕下的间距和宽度 */
+@media screen and (max-width: 480px) {
+  .header__submenu {
+    gap: 20px; /* 减小间距 */
+  }
+  .header__submenu-item {
+    width: calc(25% - 20px); /* 调整宽度计算 */
+  }
 }
+.isolate {
+  position: relative;
+  z-index: 0;
+}
+/* 修复全局设置弹窗的z-index问题 */
+.header__submenu.global-settings-popup {
+  z-index: 1; /* 提升z-index值 */
+}
+
 .section + .section {
   margin-top: var(--spacing-sections-mobile);
 }
