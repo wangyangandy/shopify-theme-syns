@@ -143,8 +143,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 .header__submenu {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  padding: 30px;
+  gap: 100px;
+  padding: 90px;
   width: 100%; /* 新增：设置宽度为100% */
  max-width: var(--page-width);
   margin: 0 auto;
