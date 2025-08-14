@@ -145,6 +145,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   flex-wrap: wrap;
   gap: 40px;
   padding: 30px;
+  width: 100%; /* 新增：设置宽度为100% */
+  max-width: var(--page-width); /* 新增：限制最大宽度与页面一致 */
+  margin: 0 auto; /* 新增：居中显示 */
 }
 
 .header__submenu-item {
