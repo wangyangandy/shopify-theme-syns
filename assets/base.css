@@ -146,8 +146,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   gap: 40px;
   padding: 30px;
   width: 100%; /* 新增：设置宽度为100% */
-  max-width: var(--page-width); /* 新增：限制最大宽度与页面一致 */
-  margin: 0 auto; /* 新增：居中显示 */
+ max-width: var(--page-width);
+  margin: 0 auto;
+  box-sizing: border-box; /* 新增：确保padding不增加总宽度 */
+  position: relative; /* 新增：与z-index配合使用 */
 }
 
 .header__submenu-item {
@@ -170,9 +172,13 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 }
 
+/* 可选：调整小屏幕下的间距和宽度 */
 @media screen and (max-width: 480px) {
+  .header__submenu {
+    gap: 20px; /* 减小间距 */
+  }
   .header__submenu-item {
-    width: calc(50% - 40px);
+    width: calc(50% - 20px); /* 调整宽度计算 */
   }
 }
 .isolate {
