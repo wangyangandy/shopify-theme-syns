@@ -179,6 +179,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   position: relative;
   z-index: 0;
 }
+/* 修复全局设置弹窗的z-index问题 */
+.header__submenu.global-settings-popup {
+  z-index: 1; /* 提升z-index值 */
+}
 
 .section + .section {
   margin-top: var(--spacing-sections-mobile);
