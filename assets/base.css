@@ -3053,23 +3053,7 @@ details-disclosure > details {
 .global-media-settings--no-shadow {
   overflow: hidden !important;
 }
-.header-menu details > .header__submenu {
-  display: none;
-}
 
-.header__inline-menu details:hover > .header__submenu {
-  opacity: 1;
-  transform: translateY(0);
-  z-index: 999;
-  display: block !important;
-}
-
-.js .header__inline-menu details:hover > .header__submenu {
-  opacity: 1;
-  transform: translateY(0);
-  z-index: 999;
-  display: block !important;
-}
 .global-media-settings--no-shadow:after {
   content: none;
 }

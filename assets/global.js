@@ -431,8 +431,8 @@ class MenuDrawer extends HTMLElement {
   }
 
   bindEvents() {
-    this.querySelectorAll('summary').forEach((summary) =>// 已禁用点击事件，改用悬浮显示
-     // summary.addEventListener('click', this.onSummaryClick.bind(this))
+    this.querySelectorAll('summary').forEach((summary) =>
+      summary.addEventListener('click', this.onSummaryClick.bind(this))
     );
     this.querySelectorAll(
       'button:not(.localization-selector):not(.country-selector__close-button):not(.country-filter__reset-button)'
