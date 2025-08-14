@@ -163,6 +163,29 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding: 0 10px;
 }
 
+.collection-item--line {
+    width: 100%;
+    height: 1px;
+    background-color: #e8e9eb;
+    margin: 10px 0;
+    clear: both;
+}
+
+.collection-item-link img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.product-collection-lists {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid #e8e9eb;
+    padding-right: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* 添加一个足够大的最大宽度 */
+}
 .section + .section {
   margin-top: var(--spacing-sections-mobile);
 }
