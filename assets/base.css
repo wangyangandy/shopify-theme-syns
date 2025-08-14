@@ -143,12 +143,12 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 .header__submenu {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   padding: 30px;
 }
 
 .header__submenu-item {
-  width: calc(20% - 30px);
+  width: calc(20% - 40px);
   box-sizing: border-box;
   text-align: center;
 }
@@ -163,13 +163,13 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (max-width: 750px) {
   .header__submenu-item {
-     width: calc(33.333% - 30px); 
+     width: calc(33.333% - 40px); 
   }
 }
 
 @media screen and (max-width: 480px) {
   .header__submenu-item {
-    width: calc(50% - 50px);
+    width: calc(50% - 40px);
   }
 }
 .isolate {
