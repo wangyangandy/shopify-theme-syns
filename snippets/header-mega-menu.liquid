@@ -4,6 +4,8 @@
   Usage:
   {% render 'header-mega-menu' %}
 {% endcomment %}
+
+
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -38,8 +40,9 @@
                       <a class="collection-item-link" href="{{ childlink.url }}">
                         <img
                           class="lazyload"
-                          data-src="{{  childlink.title | handle | append:".webp" | prepend:"nav-" | file_url  }}"
-                          src="{{  childlink.title | handle | append:".webp" | prepend:"nav-" | file_url  }}"
+                          
+                          data-src="{{ product.metafields.ss.app--3890849--eligibility.eligibility_details | file_url   }}"
+                          src="{{product.metafields.ss.app--3890849--eligibility.eligibility_details | file_url   }}"
                           loading="lazy"
                           width="124"
                           height="100"
