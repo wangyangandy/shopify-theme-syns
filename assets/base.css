@@ -139,23 +139,29 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     max-width: var(--page-width);
     padding: 0 5rem;
   }
-}.product-collection-lists { 
-    width:100%; 
-    max-width: 900px; 
-    min-width: 735px; 
-    display: flex; 
-    flex-wrap: wrap; 
-    border-right: 1px solid #e8e9eb; 
-    padding-right: 20px; 
-} 
+}
 
-.collection-item-link { 
-    width: 25%; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: space-between; 
-} 
+.product-collection-lists {
+    width: 100%;
+    /* max-width: 900px; */ /* 移除最大宽度限制 */
+    /* min-width: 735px; */ /* 移除最小宽度限制 */
+    box-sizing: border-box; /* 确保padding不增加总宽度 */
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid #e8e9eb;
+    padding-right: 20px;
+}
+
+.collection-item-link {
+    width: 25%;
+    box-sizing: border-box; /* 确保padding不增加总宽度 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* 可以添加padding控制内部间距，但不会影响宽度计算 */
+    padding: 0 10px;
+}
 
 .section + .section {
   margin-top: var(--spacing-sections-mobile);
