@@ -4,7 +4,6 @@
   Usage:
   {% render 'header-mega-menu' %}
 {% endcomment %}
-
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -21,7 +20,7 @@
                     class="header__active-menu-item"
                   {% endif %}
                 >
-                  {{- link.title | escape -}}
+                  <a href="{{ link.url }}">{{- link.title | escape -}}</a>
                 </span>
                 {{- 'icon-caret.svg' | inline_asset_content -}}
               </summary>
@@ -30,43 +29,143 @@
                 class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
                 tabindex="-1"
               >
-                <ul
-                  class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
-                  role="list"
-                >
-                  {%- for childlink in link.links -%}
-                    <li>
-                      <a
-                        id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
-                        href="{{ childlink.url }}"
-                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
-                        {% if childlink.current %}
-                          aria-current="page"
-                        {% endif %}
-                      >
-                        {{ childlink.title | escape }}
+                {% assign linkTitle = link.title | upcase %}
+
+                {% if linkTitle == 'PRODUCTS' %}
+                  <div class="product-collection-lists">
+                    {%- for childlink in link.links -%}
+                      {% assign group = forloop.index | modulo: 4 %}
+                      <a class="collection-item-link" href="{{ childlink.url }}">
+                        <img
+                          class="lazyload"
+                          data-src="{{  childlink.title | handle | append:".webp" | prepend:"nav-" | file_url  }}"
+                          src="{{  childlink.title | handle | append:".webp" | prepend:"nav-" | file_url  }}"
+                          loading="lazy"
+                          width="124"
+                          height="100"
+                          alt="{{ childlink.title }}"
+                        >
+                        <div class="collection-item-title">{{ childlink.title }}</div>
                       </a>
-                      {%- if childlink.links != blank -%}
-                        <ul class="list-unstyled" role="list">
-                          {%- for grandchildlink in childlink.links -%}
-                            <li>
-                              <a
-                                id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
-                                href="{{ grandchildlink.url }}"
-                                class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
-                                {% if grandchildlink.current %}
-                                  aria-current="page"
-                                {% endif %}
-                              >
-                                {{ grandchildlink.title | escape }}
+                      {% if group == 0 %}<div class="collection-item--line"></div>{% endif %}
+                    {% endfor %}
+                  </div>
+
+                  <div class="product-collection-banner-list">
+                    {% for block in section.blocks %}
+                      {% if block.type == 'image' %}
+                        <a class="banner-item" href="{{ block.settings.banner_link_1 }}">
+                          <img
+                            class="lazyload"
+                            loading="lazy"
+                            data-src="{{ block.settings.banner_1 | image_url }}"
+                            srcset="{{ block.settings.banner_1 | image_url }}"
+                            src="{{ block.settings.banner_1 | image_url: width: 100 }}"
+                            width="{{ block.settings.banner_1.width }}"
+                            height="{{ block.settings.banner_1.height }}"
+                            alt="{{ block.settings.banner_1.alt | escape }}"
+                          >
+                        </a>
+                        <a class="banner-item" href="{{ block.settings.banner_link_2 }}">
+                          <img
+                            class="lazyload"
+                            loading="lazy"
+                            data-src="{{ block.settings.banner_2 | image_url }}"
+                            srcset="{{ block.settings.banner_2 | image_url }}"
+                            src="{{ block.settings.banner_2 | image_url: width: 100 }}"
+                            width="{{ block.settings.banner_2.width }}"
+                            height="{{ block.settings.banner_2.height }}"
+                            alt="{{ block.settings.banner_2.alt | escape }}"
+                          >
+                        </a>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+
+                {% elsif linkTitle == 'BLOG' %}
+                  <div class="menu-width">
+                    <ul class="blog-menu-lists">
+                      {%- for childlink in link.links -%}
+                        <li class="article-item">
+                          <a href="{{ childlink.url }}">
+                            <img class="article-item-image lazyload" data-src="{{ childlink.object.image | img_url: '300x'}}" src="{{ childlink.object.image | img_url: '300x'}}" width="300" height="200" alt="{{ childlink.object.image.alt }}">
+                            <div class="article-item-content">
+                              <div class="article-item-time">By Redragon • {{ childlink.object.published_at | date: "%B %d, %Y" }}</div>
+                              <div class="article-item-title">{{ childlink.title }}</div>
+                              <div class="article-item-btn">View More</div>
+                            </div>
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+  
+                    <div class="blog-menu-btn">
+                      <a href="{{ link.url }}">VIEW MORE</a>
+                    </div>
+                  </div>
+                {% elsif linkTitle == 'CONTACT US' %}
+                  <div class="menu-width">
+                    <ul class="contact-us-lists">
+                      {% for block in section.blocks %}
+                        {% if block.type == 'text' %}
+                          {%- for childlink in link.links -%}
+                            {% assign image_variable = "image_" | append: forloop.index %}
+                            {% assign btn_variable = "btn_" | append: forloop.index %}
+                            {% assign text_variable = "text_" | append: forloop.index %}
+                            <li class="contact-us-item">
+                              <a href="{{ childlink.url }}">
+                                <img class="lazyload" data-src="{{ block.settings[image_variable] | img_url: '300x'}}" src="{{ block.settings[image_variable] | img_url: '300x'}}" width="80" height="60" alt="{{ block.settings[image_variable].alt }}">
+                                <div class="contact-title">{{ childlink.title }}</div>
+                                <div class="contact-text">{{ block.settings[text_variable] }}</div>
+                                <div class="contact-btn">{{  block.settings[btn_variable] }}</div>
                               </a>
                             </li>
-                          {%- endfor -%}
-                        </ul>
-                      {%- endif -%}
-                    </li>
-                  {%- endfor -%}
-                </ul>
+                          {% endfor %}
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  
+                {% else %}
+                  <ul
+                    class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
+                    role="list"
+                  >
+                    {%- for childlink in link.links -%}
+                      <li>
+                        <a
+                          id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                          href="{{ childlink.url }}"
+                          class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                          {% if childlink.current %}
+                            aria-current="page"
+                          {% endif %}
+                        >
+                          {{ childlink.title | escape }}
+                        </a>
+                        {%- if childlink.links != blank -%}
+                          <ul class="list-unstyled" role="list">
+                            {%- for grandchildlink in childlink.links -%}
+                              <li>
+                                <a
+                                  id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
+                                  href="{{ grandchildlink.url }}"
+                                  class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
+                                  {% if grandchildlink.current %}
+                                    aria-current="page"
+                                  {% endif %}
+                                >
+                                  {{ grandchildlink.title | escape }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {% endif %}
+
               </div>
             </details>
           </header-menu>
