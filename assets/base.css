@@ -146,7 +146,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   gap: 100px;
   padding: 160px;
   width: 100%; /* 新增：设置宽度为100% */
- max-width: var(--page-width);
+  max-width: 480px; /* 加大最大宽度*/
   margin: 0 auto;
   box-sizing: border-box; /* 新增：确保padding不增加总宽度 */
   position: relative; /* 新增：与z-index配合使用 */
