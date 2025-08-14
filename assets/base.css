@@ -168,7 +168,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (max-width: 750px) {
   .header__submenu-item {
-     width: calc(25% - 40px); 
+     width: calc(20% - 100px); 
   }
 }
 
@@ -178,7 +178,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     gap: 20px; /* 减小间距 */
   }
   .header__submenu-item {
-    width: calc(25% - 37.5px); /* 调整宽度计算 */
+    width: calc(25% - 20px); /* 调整宽度计算 */
   }
 }
 .isolate {
