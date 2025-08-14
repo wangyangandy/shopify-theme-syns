@@ -148,7 +148,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .header__submenu-item {
-  width: calc(20% - 10px);
+  width: calc(20% - 30px);
   box-sizing: border-box;
   text-align: center;
 }
@@ -163,13 +163,13 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (max-width: 750px) {
   .header__submenu-item {
-    width: calc(33.333% - 10px);
+     width: calc(33.333% - 30px); 
   }
 }
 
 @media screen and (max-width: 480px) {
   .header__submenu-item {
-    width: calc(50% - 10px);
+    width: calc(50% - 50px);
   }
 }
 .isolate {
