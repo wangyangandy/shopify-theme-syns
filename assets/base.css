@@ -141,11 +141,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 }
 .header__submenu {
- display: flex;
+   display: flex;
     flex-wrap: wrap;
     gap: 50px; /* 将间隔从40px改为50px */
     padding: 50px; /* 将内边距从40px改为50px */
-    width: 100%;
+    width: 480px; /* 将内边距从40px改为50px */
     max-width: none; /* 保持背景宽度不受限制 */
     margin: 0 auto;
     box-sizing: border-box;
