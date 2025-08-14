@@ -178,7 +178,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     gap: 20px; /* 减小间距 */
   }
   .header__submenu-item {
-    width: calc(50% - 20px); /* 调整宽度计算 */
+    width: calc(30% - 20px); /* 调整宽度计算 */
   }
 }
 .isolate {
