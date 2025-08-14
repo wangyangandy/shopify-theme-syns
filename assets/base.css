@@ -143,7 +143,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 .header__submenu {
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 200px;
   padding: 160px;
   width: 100%; /* 新增：设置宽度为100% */
  max-width: var(--page-width);
@@ -168,7 +168,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (max-width: 750px) {
   .header__submenu-item {
-     width: calc(33.333% - 40px); 
+     width: calc(25% - 40px); 
   }
 }
 
@@ -178,7 +178,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     gap: 20px; /* 减小间距 */
   }
   .header__submenu-item {
-    width: calc(30% - 20px); /* 调整宽度计算 */
+    width: calc(25% - 37.5px); /* 调整宽度计算 */
   }
 }
 .isolate {
