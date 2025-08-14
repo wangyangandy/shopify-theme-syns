@@ -141,19 +141,19 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 }
 .header__submenu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-  padding: 160px;
-  width: 100%; /* 新增：设置宽度为100% */
-  max-width: 480px; /* 加大最大宽度*/
-  margin: 0 auto;
-  box-sizing: border-box; /* 新增：确保padding不增加总宽度 */
-  position: relative; /* 新增：与z-index配合使用 */
+ display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* 将间隔从40px改为50px */
+    padding: 50px; /* 将内边距从40px改为50px */
+    width: 100%;
+    max-width: none; /* 保持背景宽度不受限制 */
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .header__submenu-item {
-  width: calc(20% - 80px);
+  width: calc(20% - 40px); 
   box-sizing: border-box;
   text-align: center;
 }
