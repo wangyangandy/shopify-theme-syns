@@ -116,6 +116,79 @@
         "title": "Why choose redragon"
       }
     },
+     "home_brands_Nc8Mid": {
+      "type": "home-brands",
+      "blocks": {
+        "image_L3nt6d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/592.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "image_aUmaAH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/592.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "image_tF6pQD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/592.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "image_8pcxKa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/592.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "image_AyR49M": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/592.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "image_GnWREk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/123.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "image_3LiaPK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_L3nt6d",
+        "image_aUmaAH",
+        "image_tF6pQD",
+        "image_8pcxKa",
+        "image_AyR49M",
+        "image_GnWREk",
+        "image_3LiaPK"
+      ],
+      "settings": {
+        "title": "Featured In Media"
+      }
+    },
     "order": [
       "image_banner",
       "featured_collection",
