@@ -68,10 +68,7 @@
       }
     }
   },
-  "order": [
-    "image_banner",
-    "featured_collection"
-  ],
+
   "home_policy_fWdp3y": {
       "type": "home-policy",
       "blocks": {
@@ -118,5 +115,10 @@
         "bg_color": "#ffffff",
         "title": "Why choose redragon"
       }
-    }
+    },
+    "order": [
+      "image_banner",
+      "featured_collection",
+      "home_policy_fWdp3y"
+    ]
 }
