@@ -151,11 +151,16 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   box-sizing: border-box; /* 新增：确保padding不增加总宽度 */
   position: relative; /* 新增：与z-index配合使用 */
 }
+ .list-menu__item {
 
+    width:500px !important;
+      
+  }
 .header__submenu-item {
   width: calc(20% - 80px);
   box-sizing: border-box;
   text-align: center;
+   width: 500px; /* 新增：设置宽度为100% */
 }
 
 .header__submenu-image {
