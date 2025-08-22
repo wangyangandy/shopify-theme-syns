@@ -141,15 +141,15 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 }
 .header__submenu {
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
-  padding: 100px;
-  width: 100%; /* 新增：设置宽度为100% */
- max-width: var(--page-width);
+  gap: 30px; /* 从100px减少到30px */
+  padding: 40px; /* 从100px减少到40px */
+  width: 100%;
+  max-width: var(--page-width);
   margin: 0 auto;
-  box-sizing: border-box; /* 新增：确保padding不增加总宽度 */
-  position: relative; /* 新增：与z-index配合使用 */
+  box-sizing: border-box;
+  position: relative;
 }
 
 .header__submenu-item {
