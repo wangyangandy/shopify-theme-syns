@@ -140,15 +140,31 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding: 0 5rem;
   }
 }
+.header__submenu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 160px;
+  width: 100%; /* 新增：设置宽度为100% */
+ max-width: var(--page-width);
+  margin: 0 auto;
+  box-sizing: border-box; /* 新增：确保padding不增加总宽度 */
+  position: relative; /* 新增：与z-index配合使用 */
+}
 
- .list-menu__item {
+.header__submenu-item {
+  width: calc(20% - 80px);
+  box-sizing: border-box;
+  text-align: center;
+}
 
-    width:500px !important;
-      
-  }
-
-
-
+.header__submenu-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  object-fit: cover;
+  border-radius: 4px;
+}
 
 @media screen and (max-width: 750px) {
   .header__submenu-item {
@@ -156,7 +172,15 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 }
 
-
+/* 可选：调整小屏幕下的间距和宽度 */
+@media screen and (max-width: 480px) {
+  .header__submenu {
+    gap: 20px; /* 减小间距 */
+  }
+  .header__submenu-item {
+    width: calc(25% - 20px); /* 调整宽度计算 */
+  }
+}
 .isolate {
   position: relative;
   z-index: 0;
