@@ -9,9 +9,9 @@
 }
 
 .product-collection-lists {
-    width: 60%;
-    max-width: 900px;
-    min-width: 735px;
+    width: 70%; /* 增加宽度百分比，从60%改为70%或更高 */
+    max-width: 1100px; /* 增加最大宽度限制，从900px改为更大的值 */
+    min-width: 735px; /* 可以保留或根据需要调整 */
     display: flex;
     flex-wrap: wrap;
     border-right: 1px solid #e8e9eb;
@@ -46,20 +46,6 @@
 
 .product-collection-lists .collection-item--line:last-child {
     display: none !important;
-}
-
-.product-collection-banner-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.product-collection-banner-list {
-    width: 20%;
-    max-width: 285px;
-    margin-left: 20px;
-    gap: 5px;
 }
 
 .banner-item {
