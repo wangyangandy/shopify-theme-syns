@@ -56,8 +56,5 @@
     width: 100%;
     height: auto;
 }
-/* 覆盖内联样式设置二级导航宽度 */
-#HeaderMenu-MenuList-1 {
-    width: 500px !important;
-}
+
 /* products */
