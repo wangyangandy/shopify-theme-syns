@@ -153,12 +153,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .header__submenu-item {
-  width: calc(25% - 75px); /* 从20% - 100px改为25% - 75px */
+  width: calc(25% - 75px);
   box-sizing: border-box;
   text-align: center;
-  min-width: 180px; /* 添加最小宽度以确保在小屏幕上的可读性 */
 }
-
 
 
 .header__submenu-image {
