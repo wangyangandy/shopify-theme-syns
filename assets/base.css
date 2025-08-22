@@ -153,7 +153,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .header__submenu-item {
-  width: calc(20% - 80px);
+  width: calc(20% - 100px);
   box-sizing: border-box;
   text-align: center;
 }
@@ -3042,13 +3042,13 @@ details-disclosure > details {
 }
 #HeaderMenu-MenuList-1.header__submenu.list-menu {
     width: 100% !important; /* 改为百分比 */
-    max-width: 80%; /* 添加最大宽度限制 */
+    max-width: 70%; /* 添加最大宽度限制 */
     min-width: 700px; /* 保留最小宽度以确保可用性 */
 }
 
 .mega-menu__content {
     width: 100% !important; /* 改为百分比 */
-    max-width: 85%; /* 添加最大宽度限制 */
+    max-width: 70%; /* 添加最大宽度限制 */
     min-width: 900px; /* 保留最小宽度以确保可用性 */
 }
 .global-media-settings {
