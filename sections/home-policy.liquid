@@ -1,0 +1,127 @@
+{{ 'section-home-policy.css' | asset_url | stylesheet_tag }}
+
+<div class="home-policy home-policy-{{ section.id }}" style="background-color:{{ section.settings.bg_color }}">
+  <div class="section-wrap page-width">
+    <h3 class="new-section-title">{{ section.settings.title }}</h3>
+    <div class="home-policy-container home-policy-container-{{ section.id }}  swiper-container">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="home-policy-item">
+            <div class="policy-item-icon">{{ block.settings.policy_icon }}</div>
+            <div class="policy-text">{{ block.settings.text }}</div>
+            <p class="policy-text-small">{{ block.settings.subtext }}</p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination-new-home swiper-pagination swiper-pagination-new-home-{{ section.id }} "></div>
+    </div>
+  </div>
+</div>
+
+<script defer>
+  document.addEventListener('DOMContentLoaded', () => {
+    var home_reviews = null;
+
+    function checkWidthAndToggleSwiper() {
+      var windowWidth = $(window).width();
+
+      if (windowWidth < 1000) {
+        $('.home-policy-container').addClass('swiper');
+        $('.home-policy-item').addClass('swiper-slide');
+
+        if (!home_reviews) {
+          home_reviews = new Swiper('.home-policy-container-{{ section.id }}', {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            slidesOffsetBefore: 20,
+            slidesOffsetAfter: 20,
+            autoHeight: true,
+            observer: true,
+            resizeObserver: true,
+            pagination: {
+              el: '.swiper-pagination-new-home-{{ section.id }} ',
+              clickable: true,
+              container: '.home-policy-{{ section.id }}',
+            },
+            breakpoints: {
+              590: {
+                slidesPerView: 'auto',
+                spaceBetween: 24,
+                slidesOffsetBefore: 20,
+                slidesOffsetAfter: 20,
+              },
+              1000: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
+              },
+            },
+          });
+        }
+      } else {
+        $('.home-policy-container').removeClass('swiper');
+        $('.home-policy-item').removeClass('swiper-slide');
+
+        if (home_reviews) {
+          home_reviews.destroy(true, true);
+          home_reviews = null;
+        }
+      }
+    }
+
+    checkWidthAndToggleSwiper();
+
+    $(window).resize(function () {
+      checkWidthAndToggleSwiper();
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Why Choose US",
+  "class": "sectionhome-policy",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Policy",
+      "type": "policy",
+      "settings": [
+        {
+          "type": "html",
+          "id": "policy_icon",
+          "label": "Icon Svg Code"
+        },
+        {
+          "type": "html",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Subtext"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New poicy"
+    }
+  ]
+}
+{% endschema %}
