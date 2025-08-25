@@ -5,7 +5,7 @@
     <h3 class="new-section-title">{{ section.settings.title }}</h3>
     <div class="home-policy-container home-policy-container-{{ section.id }}  swiper-container">
       <div class="swiper-wrapper">
-        {% for block in section.blocks % | sort: 'order' %}
+        {% for block in section.blocks | sort: 'order' %}
           <div class="home-policy-item">
             <div class="policy-item-icon">{{ block.settings.policy_icon }}</div>
             <div class="policy-text">{{ block.settings.text }}</div>
