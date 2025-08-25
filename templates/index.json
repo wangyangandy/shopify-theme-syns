@@ -66,10 +66,8 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    }
-  },
-
-  "home_policy_fWdp3y": {
+    },  
+    "home_policy_fWdp3y": {
       "type": "home-policy",
       "blocks": {
         "policy_7qaXPk": {
@@ -116,7 +114,7 @@
         "title": "Why choose redragon"
       }
     },
-     "home_brands_Nc8Mid": {
+    "home_brands_Nc8Mid": {
       "type": "home-brands",
       "blocks": {
         "image_L3nt6d": {
@@ -188,10 +186,11 @@
       "settings": {
         "title": "Featured In Media"
       }
-    },
-    "order": [
-      "image_banner",
-      "featured_collection",
-      "home_policy_fWdp3y"
-    ]
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "home_policy_fWdp3y"
+  ]
 }
