@@ -73,7 +73,7 @@
         "policy_7qaXPk": {
           "type": "policy",
           "settings": {
-            "policy_icon": "<svg width='48' height='48' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' class='icon icon-accordion icon-box'><path fill-rule='evenodd' d='M9.695.679a1 1 0 0 1 .674.003l7.846 2.859a1 1 0 0 1 .658.94v9.948a1 1 0 0 1-.553.894l-7.847 3.924a1 1 0 0 1-.882.006l-8.137-3.929a1 1 0 0 1-.565-.9v-9.94a1 1 0 0 1 .668-.943zM6.08 3.01 2.535 4.257l7.614 3.378 3.42-1.517zm.706-.248L14.2 5.838l3.337-1.48-7.51-2.736zM1.89 14.424v-9.36l7.76 3.444v9.662zm15.984.005-7.224 3.612V8.508l7.224-3.205z'/></svg>",
+           "policy_icon": "<svg width='48' height='48' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg' class='icon icon-account'><path fill='currentColor' fill-rule='evenodd' d='M6 4.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8m5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15M9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35' clip-rule='evenodd'/></svg>",
             "text": "<span>Free U.S. </span><span>Economy Shipping</span>",
             "subtext": "Reliable economy shipping to the U.S. only. Track your parcel at any time."
           }
@@ -97,7 +97,7 @@
         "policy_LNAge8": {
           "type": "policy",
           "settings": {
-            "policy_icon": "<svg width='48' height='48' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' class='icon icon-accordion icon-lock'><path fill-rule='evenodd' d='M16.5 7.118h-13V19h13zm-13-1a1 1 0 0 0-1 1V19a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V7.118a1 1 0 0 0-1-1z'/><path d='M11.443 11.92c0 .82-.646 1.486-1.443 1.486s-1.443-.665-1.443-1.486c0-.82.646-1.486 1.443-1.486s1.443.665 1.443 1.486'/><path d='M10.019 11.92c.345 0 .625.28.625.625v3.152a.625.625 0 1 1-1.25 0v-3.152c0-.345.28-.625.625-.625M6.242 3.76a3.759 3.759 0 1 1 7.516 0v2.36h-1V3.76a2.759 2.759 0 1 0-5.516 0v2.36h-1z'/></svg>",
+            "policy_icon": "<svg width='48' height='48' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' class='icon icon-accordion icon-truck'><path d='M0 3.752c0-.277.224-.502.5-.502h10.147a.5.5 0 0 1 .5.502v9.91l-.595 1.003H7.223V13.66h2.923V4.253H1.002v9.408h1.682v1.004H.501A.5.5 0 0 1 0 14.163zm18.999 4.332-7.851-1.975V5.075l8.473 2.131a.5.5 0 0 1 .379.487v6.47a.5.5 0 0 1-.5.502h-2.193v-1.003H19zm-7.851 5.578h2.196v1.003h-2.792z'/><path d='M7.713 14.185a2.56 2.56 0 0 1-2.56 2.565 2.56 2.56 0 0 1-2.56-2.565 2.56 2.56 0 0 1 2.56-2.564 2.56 2.56 0 0 1 2.56 2.564m-2.56 1.562a1.56 1.56 0 0 0 1.558-1.562 1.56 1.56 0 0 0-1.559-1.56 1.56 1.56 0 0 0-1.558 1.56 1.56 1.56 0 0 0 1.558 1.562m12.368-1.562a2.56 2.56 0 0 1-2.56 2.565 2.56 2.56 0 0 1-2.56-2.565 2.56 2.56 0 0 1 2.56-2.564 2.56 2.56 0 0 1 2.56 2.564m-2.56 1.562a1.56 1.56 0 0 0 1.558-1.562 1.56 1.56 0 0 0-1.559-1.56 1.56 1.56 0 0 0-1.558 1.56 1.56 1.56 0 0 0 1.558 1.562'/></svg>",
             "text": "<span>Enjoy Your </span><span>Redragon Perks</span>",
             "subtext": "Join Redragon Reward Program and enjoy exclusive deals and rewards."
           }
@@ -113,80 +113,7 @@
         "bg_color": "#ffffff",
         "title": "Why choose redragon"
       }
-    },
-    "home_brands_Nc8Mid": {
-      "type": "home-brands",
-      "blocks": {
-        "image_L3nt6d": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/592.png",
-            "title": "Loremous",
-            "link": ""
-          }
-        },
-        "image_aUmaAH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/592.png",
-            "title": "Loremous",
-            "link": ""
-          }
-        },
-        "image_tF6pQD": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/592.png",
-            "title": "Loremous",
-            "link": ""
-          }
-        },
-        "image_8pcxKa": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/592.png",
-            "title": "Loremous",
-            "link": ""
-          }
-        },
-        "image_AyR49M": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/592.png",
-            "title": "Loremous",
-            "link": ""
-          }
-        },
-        "image_GnWREk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/123.png",
-            "title": "Loremous",
-            "link": ""
-          }
-        },
-        "image_3LiaPK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/12.png",
-            "title": "Loremous",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_L3nt6d",
-        "image_aUmaAH",
-        "image_tF6pQD",
-        "image_8pcxKa",
-        "image_AyR49M",
-        "image_GnWREk",
-        "image_3LiaPK"
-      ],
-      "settings": {
-        "title": "Featured In Media"
-      }
-    }
+    }   
   },
   "order": [
     "image_banner",
