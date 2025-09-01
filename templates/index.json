@@ -57,7 +57,6 @@
         "view_all_style": "solid",
         "enable_desktop_slider": true,
         "swipe_on_mobile": true
-      
       }
     },  
     "home_policy_fWdp3y": {
@@ -88,15 +87,14 @@
           }
         }
       },
-
+      
       
       "block_order": [
         "policy_7qaXPk",
         "policy_ChKa8M",
-        "policy_QXqdWm",
-        "policy_LNAge8"
+        "policy_QXqdWm"
       ],
-
+  
       "settings": {
         "bg_color": "#ffffff",
         "title": "Why choose redragon"
@@ -121,7 +119,7 @@
           "settings": {
             "image": "shopify://shop_images/592.jpg",
             "title": "3D Measurement: ",
-            "content": "The 3D scanners and Geomagic Wrap software for 3DMakerpro could accurately capture objects’ dimension.",
+            "content": "The 3D scanners and Geomagic Wrap software for 3DMakerpro could accurately capture objects' dimension.",
             "btntext": "Read More",
             "btnurl": ""
           }
@@ -245,7 +243,8 @@
         "breakpoint_1024": 2,
         "breakpoint_768": 1
       }
-    },
+    }
+  },
   "order": [
     "image_banner",
     "featured_collection",
