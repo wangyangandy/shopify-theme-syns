@@ -1,0 +1,159 @@
+/* 基础样式 */
+.index-switchcontent {
+  position: relative;
+  width: 100%;
+}
+
+.section-wrap {
+  padding: 0 15px;
+}
+
+.switchcontent-lefttitle {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Swiper容器样式 */
+.switchcontent-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.switchcontent-item {
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.switchcontent-item:hover {
+  transform: translateY(-4px);
+}
+
+.switchcontent-icon img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+
+.switchcontent-title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.switchcontent-content {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.switchcontent-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.switchcontent-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.switchcontent-image:hover img {
+  transform: scale(1.05);
+}
+
+/* 响应式图像控制 */
+.switchcontent-image-mobile {
+  display: block;
+}
+
+.switchcontent-image-desktop {
+  display: none;
+}
+
+/* 导航箭头样式 */
+.switchcontent-prev,
+.switchcontent-next {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #333;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.switchcontent-prev:hover,
+.switchcontent-next:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.switchcontent-prev::after,
+.switchcontent-next::after {
+  font-size: 16px;
+}
+
+/* 分页样式 */
+.switchcontent-pagination {
+  margin-top: 20px;
+}
+
+.switchcontent-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #ddd;
+  opacity: 1;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+.switchcontent-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 4px;
+  background: #333;
+}
+
+/* 响应式布局 */
+@media (min-width: 768px) {
+  .switchcontent-image-mobile {
+    display: none;
+  }
+  
+  .switchcontent-image-desktop {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-wrap {
+    padding: 0 20px;
+  }
+  
+  .switchcontent-prev,
+  .switchcontent-next {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .switchcontent-prev::after,
+  .switchcontent-next::after {
+    font-size: 20px;
+  }
+}
+
+/* 隐藏导航箭头在只有一页内容时 */
+.swiper-container-onlyone .switchcontent-prev,
+.swiper-container-onlyone .switchcontent-next {
+  display: none;
+}
