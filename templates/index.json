@@ -89,13 +89,15 @@
         }
       },
 
+
+      
       "block_order": [
         "policy_7qaXPk",
         "policy_ChKa8M",
         "policy_QXqdWm",
         "policy_LNAge8"
       ],
-      
+
       "settings": {
         "bg_color": "#ffffff",
         "title": "Why choose redragon"
