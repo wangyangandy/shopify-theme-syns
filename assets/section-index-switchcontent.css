@@ -157,3 +157,9 @@
 .swiper-container-onlyone .switchcontent-next {
   display: none;
 }
+
+/* 修改后 */
+.swiper-button-prev,
+.swiper-button-next {
+  /* 保持原有样式，但使用Swiper标准类名 */
+}

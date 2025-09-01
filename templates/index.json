@@ -84,7 +84,7 @@
           "settings": {
           "policy_icon": "<svg width='48' height='48' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' class='icon icon-accordion icon-leaf'><path d='M18.63.085c.291.058.627.167.869.398.25.24.363.581.421.873.062.307.08.648.08.97a14 14 0 0 1-.099 1.443l-.012.11v.006a67 67 0 0 1-.633 4.278c-.298 1.612-.694 3.382-1.214 4.954v.003c-.502 1.494-1.207 3.11-2.254 4.158-3.607 3.612-9.47 3.639-13.081.024-3.61-3.616-3.584-9.487.023-13.099C3.777 3.155 5.378 2.45 6.884 1.946h.001c1.57-.52 3.325-.917 4.948-1.215a66 66 0 0 1 4.273-.634h.005l.038-.005A14 14 0 0 1 17.665 0c.32.003.66.024.966.085m-2.41 1.018c-1.106.13-2.61.33-4.204.623-1.6.294-3.304.68-4.813 1.18-1.478.494-2.886 1.14-3.758 2.013C.229 8.14.209 13.37 3.421 16.586s8.436 3.196 11.652-.024c.871-.872 1.517-2.293 2.01-3.764.499-1.51.885-3.228 1.179-4.818a66 66 0 0 0 .635-4.327c.035-.314.09-.824.092-1.33 0-.289-.017-.554-.06-.767-.046-.229-.106-.32-.129-.341-.03-.03-.134-.09-.367-.137a4.3 4.3 0 0 0-.775-.066 13 13 0 0 0-1.408.088z'/><path d='M19.43.502a.507.507 0 0 1-.004.715L.861 19.617a.505.505 0 1 1-.711-.72L18.715.498a.505.505 0 0 1 .715.004'/><path d='M5.623 2.477h.505v11.19h11.268v.505H5.623z'/><path d='M10.188 1.188h.505v7.96h8.091v.505h-8.596z'/></svg>",
             "text": "<span>2-Year </span><span>Limited Warranty对对对</span>",
-            "subtext": "Only available on redragonshop三生三世."
+            "subtext": "Only available on redragonshop."
           }
         }
       },
@@ -99,68 +99,154 @@
         "title": "Why choose redragon"
       }
     },
-      "index_switchcontent_Fh3c9m": {
-      "type": "index-switchcontent",
+    "index_switchcontent_Fh3c9m": {
+      "type": "index-blockswiper",
       "blocks": {
-        "block_t4ajdg": {
+        "block_WaBUkr": {
           "type": "block",
           "settings": {
-            "leftcon": "<p><strong>We collaborated with 3DMakerpro to deliver a consumer-friendly solution and we’re certain it’s going to be a game-changer in the segment.</strong></p><p></p><p></p><p></p><p></p><p></p>",
-            "icon": "shopify://shop_images/1_bcf3a660-5b16-4ac6-bb39-2e635cd27329.png",
-            "image": "shopify://shop_images/22_2x_94f20b63-c5db-44e3-b9d2-9c37451cf96b.png",
-            "imagemb": "shopify://shop_images/3dpromb_13.jpg",
-            "title": "The award-winning"
+            "image": "shopify://shop_images/12.png",
+            "imagemb": "shopify://shop_images/12.png",
+            "title": "3D Printing: ",
+            "content": "Integrating 3D scanners with 3D printing enables effective object duplication, modification, and repair across industries.",
+            "btntext": "Read More",
+            "btnurl": ""
           }
         },
-        "block_7YAYjA": {
+        "block_NgTtJi": {
           "type": "block",
           "settings": {
-            "leftcon": "<p><strong>Whether you're a professional looking for a low-cost way to capturegranular detail or a hobbyist seeking an easy-to-use scanning solution,the Seal is designed to cater to a spectrum of needs.</strong></p>",
-            "icon": "shopify://shop_images/6a0f48436f03bf48e8c7f28f9f150b4c_f2110bbd-2a6f-4257-847d-93e7703b7e0f.png",
-            "image": "shopify://shop_images/22_2x_94f20b63-c5db-44e3-b9d2-9c37451cf96b.png",
-            "imagemb": "shopify://shop_images/3dpromb_13.jpg",
-            "title": "The award-winning02"
+            "image": "shopify://shop_images/592.jpg",
+            "title": "3D Measurement: ",
+            "content": "The 3D scanners and Geomagic Wrap software for 3DMakerpro could accurately capture objects’ dimension.",
+            "btntext": "Read More",
+            "btnurl": ""
           }
         },
-        "block_EqcLwy": {
+        "block_yccL9e": {
           "type": "block",
           "settings": {
-            "leftcon": "<p><strong>The Moose series blends user-friendly design with advanced 3D scanning technology, making professional-grade tools more accessible.</strong></p>",
-            "icon": "shopify://shop_images/2F3AB870-787B-4715-BBB0-D2BE6EEB11BF.png",
-            "image": "shopify://shop_images/22_2x_94f20b63-c5db-44e3-b9d2-9c37451cf96b.png",
-            "imagemb": "shopify://shop_images/3dpromb_13.jpg",
-            "title": "The award-winning03"
+            "image": "shopify://shop_images/11111.png",
+            "title": "Automatic:",
+            "content": "Smart 3D scanning solutions tailored for automation systems, robotics calibration, and control. ",
+            "btntext": "Read More",
+            "btnurl": ""
           }
         },
-        "block_nBXzHm": {
+        "block_cqncWT": {
           "type": "block",
           "settings": {
-            "leftcon": "<p><strong>As mentioned, the Mole is designed for small to medium sized objects, so it performs optimally when scanning items in that range, and the best results were obtained on Table Mode, thanks to the turntable providing a constant and stable turning motion.</strong></p>",
-            "icon": "shopify://shop_images/3d-printing-logo_61b2b755-7bb1-4d2b-b0ff-78f8aeb810cf.png",
-            "image": "shopify://shop_images/22_2x_94f20b63-c5db-44e3-b9d2-9c37451cf96b.png",
-            "imagemb": "shopify://shop_images/3dpromb_13.jpg",
-            "title": "The award-winning03"
+            "image": "shopify://shop_images/12.png",
+            "title": "Reverse Engineering:",
+            "content": "3D scanning in reverse engineering significantly enhances accuracy, efficiency, and design flexibility.",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_hYz4HU": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/11111.png",
+            "title": "Arts & Design:",
+            "content": "Capture intricate artistic textures and complex shapes with high-precision 3D scanning technology. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_Nnq8QA": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Education:",
+            "content": "User-friendly 3D scanners designed to enhance interactive learning experiences in the classroom. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_JBzPR8": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/11111.png",
+            "title": "Entertainment:",
+            "content": "Create lifelike props, characters, and assets for movies, VR experiences, gaming, and special effects. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_awHpP6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Forensics:",
+            "content": "Accurate 3D scanning tools for capturing detailed crime scene evidence and forensic documentation. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_BJKCmQ": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Jewelry:",
+            "content": "Precisely scan delicate jewels pieces to streamline design, customization, and 3D printing processes. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_kR8LL7": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/11111.png",
+            "title": "Medical:",
+            "content": "Capture detailed anatomical scans to support medical diagnostics, training simulations, and prosthetics",
+            "btntext": "Read More",
+            "btnurl": ""
           }
         }
-      }, 
+      },
       "block_order": [
-        "block_t4ajdg",
-        "block_7YAYjA",
-        "block_EqcLwy",
-        "block_nBXzHm"
+        "block_WaBUkr",
+        "block_NgTtJi",
+        "block_yccL9e",
+        "block_cqncWT",
+        "block_hYz4HU",
+        "block_Nnq8QA",
+        "block_JBzPR8",
+        "block_awHpP6",
+        "block_BJKCmQ",
+        "block_kR8LL7"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 1150px) {.section-header {grid-template-columns: auto; }}",
+        "@media screen and (min-width: 550px) {> div {padding-inline: 8.1%; }}"
+      ],
+      "name": "Index Block Swiper",
       "settings": {
-        "top_dis": 0,
-        "bottom_dis": 102,
-        "lefttitle": "As seen on",
-        "image": "shopify://shop_images/22_2x_94f20b63-c5db-44e3-b9d2-9c37451cf96b.png",
-        "imagemb": "shopify://shop_images/3dpromb_13.jpg",
-        "title": "The award-winning"
+        "subheading": "",
+        "title": "Power Your Workflow with 3DMakerpro 3D Scanners",
+        "content": "<p>Boost efficiency with the best 3D scanners for manufacturing, design, education, and aftermarket repair.</p>",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "slides_per_view": 3,
+        "space_between": 30,
+        "loop": false,
+        "autoplay": false,
+        "autoplay_speed": 3000,
+        "show_navigation": true,
+        "show_pagination": false,
+        "breakpoint_1024": 2,
+        "breakpoint_768": 1
       }
-  },
+    },
   "order": [
     "image_banner",
     "featured_collection",
+    "index_switchcontent_Fh3c9m",
     "home_policy_fWdp3y"
   ]
 }
