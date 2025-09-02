@@ -1,12 +1,4 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+
 {
   "sections": {
     "image_banner": {
@@ -109,7 +101,7 @@
           "settings": {
             "policy_icon": "<svg width='48' height='48' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' class='icon icon-accordion icon-truck'><path d='M0 3.752c0-.277.224-.502.5-.502h10.147a.5.5 0 0 1 .5.502v9.91l-.595 1.003H7.223V13.66h2.923V4.253H1.002v9.408h1.682v1.004H.501A.5.5 0 0 1 0 14.163zm18.999 4.332-7.851-1.975V5.075l8.473 2.131a.5.5 0 0 1 .379.487v6.47a.5.5 0 0 1-.5.502h-2.193v-1.003H19zm-7.851 5.578h2.196v1.003h-2.792z'/><path d='M7.713 14.185a2.56 2.56 0 0 1-2.56 2.565 2.56 2.56 0 0 1-2.56-2.565 2.56 2.56 0 0 1 2.56-2.564 2.56 2.56 0 0 1 2.56 2.564m-2.56 1.562a1.56 1.56 0 0 0 1.558-1.562 1.56 1.56 0 0 0-1.559-1.56 1.56 1.56 0 0 0-1.558 1.56 1.56 1.56 0 0 0 1.558 1.562m12.368-1.562a2.56 2.56 0 0 1-2.56 2.565 2.56 2.56 0 0 1-2.56-2.565 2.56 2.56 0 0 1 2.56-2.564 2.56 2.56 0 0 1 2.56 2.564m-2.56 1.562a1.56 1.56 0 0 0 1.558-1.562 1.56 1.56 0 0 0-1.559-1.56 1.56 1.56 0 0 0-1.558 1.56 1.56 1.56 0 0 0 1.558 1.562'/></svg>",
             "text": "<span>Enjoy Your </span><span>Redragon Perks</span>",
-            "subtext": "Join Redragon Reward Program and enjoy exclusive deals and rewards."
+            "subtext": "Join Redragon Reward Program and enjoy exclusive deals and rewards333333."
           }
         }
       },
@@ -126,9 +118,156 @@
       }
     }   
   },
+   "index_blockswiper_BLRRKR": {
+      "type": "index-blockswiper",
+      "blocks": {
+        "block_WaBUkr": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "imagemb": "shopify://shop_images/12.png",
+            "title": "3D Printing: ",
+            "content": "Integrating 3D scanners with 3D printing enables effective object duplication, modification, and repair across industries.",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_NgTtJi": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "3D Measurement: ",
+            "content": "The 3D scanners and Geomagic Wrap software for 3DMakerpro could accurately capture objects’ dimension.",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_yccL9e": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Automatic:",
+            "content": "Smart 3D scanning solutions tailored for automation systems, robotics calibration, and control. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_cqncWT": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Reverse Engineering:",
+            "content": "3D scanning in reverse engineering significantly enhances accuracy, efficiency, and design flexibility.",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_hYz4HU": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Arts & Design:",
+            "content": "Capture intricate artistic textures and complex shapes with high-precision 3D scanning technology. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_Nnq8QA": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Education:",
+            "content": "User-friendly 3D scanners designed to enhance interactive learning experiences in the classroom. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_JBzPR8": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Entertainment:",
+            "content": "Create lifelike props, characters, and assets for movies, VR experiences, gaming, and special effects. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_awHpP6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Forensics:",
+            "content": "Accurate 3D scanning tools for capturing detailed crime scene evidence and forensic documentation. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_BJKCmQ": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Jewelry:",
+            "content": "Precisely scan delicate jewelry pieces to streamline design, customization, and 3D printing processes. ",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        },
+        "block_kR8LL7": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "Medical:",
+            "content": "Capture detailed anatomical scans to support medical diagnostics, training simulations, and prosthetics",
+            "btntext": "Read More",
+            "btnurl": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_WaBUkr",
+        "block_NgTtJi",
+        "block_yccL9e",
+        "block_cqncWT",
+        "block_hYz4HU",
+        "block_Nnq8QA",
+        "block_JBzPR8",
+        "block_awHpP6",
+        "block_BJKCmQ",
+        "block_kR8LL7"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 1150px) {.section-header {grid-template-columns: auto; }}",
+        "@media screen and (min-width: 550px) {> div {padding-inline: 8.1%; }}",
+        ".swiper-container .swiper-wrapper {display: flex;}",
+        ".swiper-container .swiper-slide {width: 25%;}",
+        "@media screen and (max-width: 768px) {",
+        "  .swiper-container .swiper-slide {width: 50%;}",
+        "}",
+        "@media screen and (max-width: 480px) {",
+        "  .swiper-container .swiper-slide {width: 100%;}",
+        "}"
+      ],
+      "name": "Index Block Swiper",
+      "settings": {
+        "subheading": "",
+        "title": "Power Your Workflow with 3DMakerpro 3D Scanners",
+        "content": "<p>Boost efficiency with the best 3D scanners for manufacturing, design, education, and aftermarket repair.</p>",
+        "link_url": "/pages/application",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "slides_per_view": 4,
+        "space_between": 20,
+        "slides_per_group": 4
+      }
+    },
   "order": [
     "image_banner",
     "featured_collection",
+    "home_policy_fWdp3y",
     "home_policy_fWdp3y"
   ]
 }
