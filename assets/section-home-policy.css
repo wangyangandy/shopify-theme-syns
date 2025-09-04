@@ -1,0 +1,114 @@
+.home-policy .home-policy-container {
+  margin-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: initial;
+}
+.home-policy .section-wrap .swiper-wrapper {
+  padding-bottom: 0;
+  align-items: initial;
+}
+.home-policy .home-policy-item {
+  text-align: center;
+  padding: 1.6%;
+  border-radius: 12px;
+  background: var(--Pure_White);
+  box-shadow: 0px 3px 6px 0px rgba(7, 4, 146, 0.1),
+    0px 36px 90px 0px rgba(6, 47, 125, 0.05),
+    0px 18px 36px 0px rgba(27, 59, 119, 0.05);
+}
+
+.home-policy .home-policy-item .policy-text {
+  color: var(--Google_Black);
+  font-weight: 700;
+  font-size: clamp(20px, 1.667vw, 24px);
+  line-height: normal;
+}
+
+.home-policy .home-policy-item p {
+  color: var(--Dark_Text_Grey);
+  font-size: clamp(16px, 1.04vw, 20px);
+}
+.home-policy .swiper-pagination-new-home {
+  position: relative;
+  bottom: -16px;
+}
+@media (min-width: 1001px) {
+  .home-policy .section-wrap .swiper-wrapper {
+    flex-wrap: nowrap;
+  }
+  .home-policy .home-policy-item {
+    width: 25%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .home-policy .home-policy-item .policy-text {
+    margin-bottom: 24px;
+  }
+  .home-policy .home-policy-item .policy-text span {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .home-policy .section-wrap .swiper-wrapper {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .home-policy .swiper-pagination-new-home {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-policy .home-policy-container {
+    overflow: hidden;
+  }
+
+  .home-policy .home-policy-item {
+    width: calc(50% - 32px);
+  }
+
+  .home-policy .swiper-pagination-new-home {
+    bottom: -30px;
+  }
+}
+
+@media (max-width: 590px) {
+  .home-policy .swiper-pagination-new-home {
+    bottom: 0;
+    margin-top: 16px;
+    left: 0;
+  }
+  .home-policy .home-policy-container {
+    margin-top: 0;
+  }
+  .home-policy .home-policy-item {
+    padding: 32px 24px;
+  }
+
+  .home-policy .home-policy-item .policy-item-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .home-policy .home-policy-item .policy-text {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+
+  .home-policy .home-policy-item p {
+    display: none;
+  }
+  .home-policy .page-width {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .home-policy-container:not(.swiper-initialized) .swiper-slide:nth-child(n+1){display: none;}
+  .home-policy-container:not(.swiper-initialized) .swiper-slide{width: 50%;}
+}
