@@ -35,22 +35,27 @@
                 {% if linkTitle == 'PRODUCTS' %}
                   <div class="product-collection-lists">
                     {%- for childlink in link.links -%}
-                      {% assign group = forloop.index | modulo: 4 %}
-                      <a class="collection-item-link" href="{{ childlink.url }}">
-                       <img
+                      {% assign group = forloop.index | modulo: 5 %}
+                        <a class="collection-item-link" href="{{ childlink.url }}">
+                        <img
                           class="lazyload"
-                          data-src="{{  childlink.title | handle | append:".webp" | prepend:"nav-" | file_url  }}"
-                          src="{{  childlink.title | handle | append:".webp" | prepend:"nav-" | file_url  }}"
+                          {% if childlink.object and childlink.object.featured_image %}
+                            data-src="{{ childlink.object.featured_image | image_url: width: 124 }}"
+                            src="{{ childlink.object.featured_image | image_url: width: 124 }}"
+                          {% else %}
+                            data-src="{{ childlink.title | handle | append:'.webp' | prepend:'nav-' | file_url }}"
+                            src="{{ childlink.title | handle | append:'.webp' | prepend:'nav-' | file_url }}"
+                          {% endif %}
                           loading="lazy"
                           width="124"
                           height="100"
                           alt="{{ childlink.title }}"
-                        >
-                        <div class="collection-item-title">{{ childlink.title }}</div>
+                          >
+                          <div class="collection-item-title">{{ childlink.title }}</div>
                       </a>
                       {% if group == 0 %}<div class="collection-item--line"></div>{% endif %}
                     {% endfor %}
-                  </div>                  
+                  </div>               
                 {% else %}
                   <ul
                     class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
