@@ -31,7 +31,6 @@
                 tabindex="-1"
               >
                 {% assign linkTitle = link.title | upcase %}
-
                 {% if linkTitle == 'PRODUCTS' %}
                   <div class="product-collection-lists">
                     {%- for childlink in link.links -%}
@@ -55,7 +54,7 @@
                       </a>
                       {% if group == 0 %}<div class="collection-item--line"></div>{% endif %}
                     {% endfor %}
-                  </div>               
+                  </div>                 
                 {% else %}
                   <ul
                     class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
