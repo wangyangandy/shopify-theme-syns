@@ -846,23 +846,37 @@ details[open]>.header__menu-item {
 /* 移动端响应式样式 - 产品菜单图片 */
 @media (max-width: 749px) {
   .product-collection-lists {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin: 0 auto;
+    /* 使用Flexbox创建网格布局，不使用justify-content: center */
+    position: relative;
   }
   
   .product-collection-lists .collection-item-link {
-    width: 45%; /* 在移动端每行显示两个图片 */
-    margin: 0 5px 15px;
+    width: calc(20% - 8px); /* 5列布局，考虑间距 */
+    margin: 0 4px 15px;
     text-align: center;
+    flex-shrink: 0; /* 防止压缩 */
   }
   
+  /* 关键技巧：使用伪元素作为填充 */
+  .product-collection-lists::after {
+    content: '';
+    display: block;
+    width: calc(60% - 16px); /* 填充3个项目的空间 */
+    height: 0;
+    flex-shrink: 0;
+  }
+  
+  /* 确保图片能够自适应容器宽度 */
   .product-collection-lists img {
-    width: 100% !important; /* 覆盖内联的width属性 */
-    height: auto !important; /* 保持图片比例 */
-    max-width: 100px; /* 设置最大宽度，防止图片过大 */
+    width: 100% !important;
+    height: auto !important;
+    max-width: 124px; /* 限制最大宽度 */
   }
   
   .collection-item-title {
-    font-size: 12px; /* 调整标题字体大小以适应移动端 */
+    font-size: 12px;
   }
 }
