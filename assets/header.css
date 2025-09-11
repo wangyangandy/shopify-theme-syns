@@ -842,3 +842,27 @@ details[open]>.header__menu-item {
 }
 
 /* transcy end */
+
+/* 移动端响应式样式 - 产品菜单图片 */
+@media (max-width: 749px) {
+  .product-collection-lists {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-collection-lists .collection-item-link {
+    width: 45%; /* 在移动端每行显示两个图片 */
+    margin: 0 5px 15px;
+    text-align: center;
+  }
+  
+  .product-collection-lists img {
+    width: 100% !important; /* 覆盖内联的width属性 */
+    height: auto !important; /* 保持图片比例 */
+    max-width: 100px; /* 设置最大宽度，防止图片过大 */
+  }
+  
+  .collection-item-title {
+    font-size: 12px; /* 调整标题字体大小以适应移动端 */
+  }
+}
