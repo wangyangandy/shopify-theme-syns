@@ -1,0 +1,93 @@
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      <div class="swiper-slide">
+        <!-- 这里是每个区块的内容 -->
+        <div class="card">
+          <div class="card-image">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image }}" alt="{{ block.settings.title }}">
+            {% endif %}
+          </div>
+          <div class="card-content">
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.content }}</p>
+            {% if block.settings.btntext %}
+              <a href="{{ block.settings.btnurl }}" class="btn">{{ block.settings.btntext }}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  
+  {% if section.settings.show_navigation %}
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  {% endif %}
+  
+  {% if section.settings.show_pagination %}
+    <div class="swiper-pagination"></div>
+  {% endif %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: {{ section.settings.slides_per_view }},
+      spaceBetween: {{ section.settings.space_between }},
+      loop: {{ section.settings.loop }},
+      {% if section.settings.autoplay %}
+      autoplay: {
+        delay: {{ section.settings.autoplay_speed }},
+        disableOnInteraction: false,
+      },
+      {% endif %}
+      {% if section.settings.show_navigation %}
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      {% endif %}
+      {% if section.settings.show_pagination %}
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      {% endif %}
+      breakpoints: {
+        1024: {
+          slidesPerView: {{ section.settings.breakpoint_1024 }},
+        },
+        768: {
+          slidesPerView: {{ section.settings.breakpoint_768 }},
+        },
+      },
+    });
+  });
+</script>
+
+<style>
+  .swiper-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* 中心对齐幻灯片内容 */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+</style>
